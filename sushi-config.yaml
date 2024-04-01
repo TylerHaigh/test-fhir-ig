@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: com.nswhp
 canonical: http://fhir.pathology.nsw.health.gov.au
-name: NSWHP
+name: NSWHP Implementation Guide
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
@@ -76,7 +76,14 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
+  Artifacts:
+    Logical Models: artifacts.html#1
+    Resource Profiles: artifacts.html#2
+    Extension Definitions: artifacts.html#3
+    Value Sets: artifacts.html#4
+    Example Instances: artifacts.html#5
+  Downloads: downloads.html
+  # History: http://hl7.org/fhir/us/example/history.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
@@ -86,15 +93,15 @@ menu:
 # Those who need more control or want to add additional details to the contact values can use
 # contact directly and follow the format outlined in the ImplementationGuide resource and
 # ContactDetail.
-#
-# contact:
-#   - name: Bob Smith
-#     telecom:
-#       - system: email # phone | fax | email | pager | url | sms | other
-#         value: bobsmith@example.org
-#         use: work
-#
-#
+
+contact:
+  - name: Tyler Haigh
+    telecom:
+      - system: email # phone | fax | email | pager | url | sms | other
+        value: tylerhaigh@example.org
+        use: work
+
+
 # The global property corresponds to the IG.global property, but it
 # uses the type as the YAML key and the profile as its value. Since
 # FHIR does not explicitly disallow more than one profile per type,
